@@ -1,0 +1,17 @@
+{
+  "name": "Mudrexx Earn",
+  "short_name": "MudrexxEarn",
+  "description": "Institutional Trading & Market Intelligence Training Programme",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090A0F",
+  "theme_color": "#090A0F",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

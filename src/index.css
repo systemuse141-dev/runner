@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #07080D;
+  --bg-secondary: #0B0D16;
+  --surface-royal: #111424;
+  --surface-elevated: #161B30;
+  --surface-highlight: #1D2340;
+  --gold-primary: #D4AF37;
+  --gold-metallic: #C5A059;
+  --gold-champagne: #E6CA65;
+  --gold-subtle: rgba(212, 175, 55, 0.15);
+  --gold-border: rgba(212, 175, 55, 0.25);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --ivory: #FBFBFA;
+  --emerald-refined: #10B981;
+  --ruby-refined: #E11D48;
+}
+
+/* Tabular numbers for financial and numerical precision */
+.font-mono, .tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom Royal Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07080D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E2338;
+  border-radius: 9999px;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
+/* Royal Gold Text Effect */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F5E7B8 0%, #D4AF37 50%, #C5A059 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-platinum-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 60%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Royal Glass Cards */
+.royal-glass {
+  background: rgba(17, 20, 36, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+}
+
+.royal-glass-interactive {
+  background: rgba(17, 20, 36, 0.8);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  transition: all 0.2s ease;
+}
+
+.royal-glass-interactive:hover {
+  border-color: rgba(212, 175, 55, 0.4);
+  background: rgba(22, 27, 48, 0.9);
+  box-shadow: 0 12px 35px -5px rgba(0, 0, 0, 0.6), 0 0 15px -2px rgba(212, 175, 55, 0.15);
+}
+
+/* Reduced Motion respect */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
