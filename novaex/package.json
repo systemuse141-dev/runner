@@ -1,0 +1,33 @@
+{
+  "name": "novaex",
+  "version": "0.9.0",
+  "private": true,
+  "type": "module",
+  "description": "NOVAEX — premium crypto platform: simple consumer app, pro trading terminal, human-controlled operator plane, NOVA AI assistance.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev:server": "node server/src/index.js",
+    "dev:web": "vite",
+    "build": "vite build",
+    "start": "node server/src/index.js",
+    "seed": "NOVAEX_DEMO_SEED=1 node server/src/seed.js",
+    "test": "node --test server/test/unit/*.test.js server/test/integration/*.test.js server/test/e2e/*.test.js",
+    "test:unit": "node --test server/test/unit/*.test.js",
+    "test:integration": "node --test server/test/integration/*.test.js",
+    "test:e2e": "node --test server/test/e2e/*.test.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.8"
+  }
+}
